@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clave5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    <title>Yincana Question</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+
+</head>
+<body>
+    
+    <div class="container">
+        
+    
+            <button class="salir" onclick="actualizarYVolverAlInicio()" class="ov-btn-slide-close"><i class="fa-solid fa-arrows-rotate"></i></button>
+        
+        <h1>Runic Alphabet </h1>
+        <div id="runas-container">
+            <img id="runas_img" src="images/Alfabeto.png"  alt="">
+            <!-- Runas Vikingas will go here -->
+        </div>
+        <div id="letter-boxes_dup">
+            <!-- Letter boxes will go here -->
+            <div class="box_dup"><img src="images/c.png" alt=""></div>
+            <div class="box_dup"><img src="images/o.png" alt=""></div>
+            <div class="box_dup"><img src="images/m.png" alt=""></div>
+            <div class="box_dup"><img src="images/p.png" alt=""></div>
+            <div class="box_dup"><img src="images/a.png" alt=""></div>
+            <div class="box_dup"><img src="images/r.png" alt=""></div>
+            <div class="box_dup"><img src="images/t.png" alt=""></div>
+            <div class="box_dup"><img src="images/e.png" alt=""></div>
+        </div>
+        <div id="letter-boxes">
+            <!-- Letter boxes will go here -->
+        </div>
+        
+        <input type="text" id="guess-input" maxlength="1" placeholder="Introduce una letra">
+        <div id="message-container"></div>
+        <button class="ov-btn-slide-close" onclick="checkLetter()">Siguiente</button>
+        
+        <!-- <button onclick="continueToNext()">Continue</button> -->
+    </div>
+
+    
+    <canvas id="matrix-canvas"></canvas>
+
+    <script src="clave5.js"></script>
+    <script src="scriptvideo.js"></script>
+</body>
+
+</html>

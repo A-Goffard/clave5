@@ -1,0 +1,194 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+
+#matrix-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Coloca el canvas detrás del contenido */
+}
+
+h1{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+#runas_img{
+    width: 80%;
+    height: 30%;
+    position: relative;
+    z-index: 1;
+}
+.container {
+  background: linear-gradient(45deg, #FFEB3B, #FFC107); /* Modifica los colores según tus preferencias */
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+
+/* #runas-container {
+    font-size: 24px;
+    margin-bottom: 20px;
+    
+} */
+
+#letter-boxes {
+  margin: o auto;
+    display: flex;
+    justify-content: center;
+   
+}
+
+#letter-boxes .box{
+    width: 2rem;
+    height: 2rem;
+    /* border: 1px solid #333; */
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 24px;
+}
+
+#guess-input {
+    width: 50%;
+   margin: 2rem auto;
+/*  min-height: 2rem; */  
+ border: 2px solid #4741d7; /* Color del borde normal */
+ padding: 10px;
+ font-size: 18px;
+ border-radius: 10px;
+ position: relative;
+ transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+ font-family: 'Space Grotesk',sans-serif;
+ 
+ 
+}
+
+#guess-input:focus {
+  border-color: #29b6f6; /* Cambiar color del borde al enfocar el input */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 123, 255, 0.25); /* Efecto de sombreado */
+}
+
+#guess-input::placeholder {
+  color: #aaa; /* Color del texto de marcador de posición */
+}
+
+
+#letter-boxes_dup {
+ 
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+#letter-boxes_dup .box_dup{
+ 
+    margin: 0 auto;
+    background: linear-gradient(45deg, #FFEB3B, #FFC107); 
+   /*  border: 1px solid #333; */
+   
+ /*   display: flex;
+   justify-content: space-around; */
+ 
+}
+
+#letter-boxes_dup .box_dup img{
+  max-width: 100%;
+  height: auto;
+ 
+}
+/* ------------------------------------------------------- */
+
+.ov-btn-slide-close {
+  background: linear-gradient(45deg, #1565C0, #2188ff);  /* Mismo gradiente amarillo que el contenedor */
+  color: #fff; /* Color de texto blanco */
+  margin: 10px;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  
+
+  
+}
+
+
+  .salir  {
+    display: flex;
+
+    background: linear-gradient(45deg, #52d705, #2b6604); 
+    color: #fff; /* Color de texto blanco */
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.salir button:hover {
+    background: linear-gradient(45deg, #C62828, #B71C1C); /* Cambio de color al pasar el mouse */
+}
+
+
+ p{
+    font-size: 1.5rem;
+
+   
+ }
+
+ /* -------------------------------------------------------------------- */
+/* 
+ #applause-animation {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hand {
+  width: 50px;
+  height: auto;
+  margin: 0 5px;
+  opacity: 0;
+  animation: applause 10s ease-in-out forwards;
+}
+
+@keyframes applause {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+ */
+
+ .correct-letter {
+  margin: 0 auto;
+  transform: scale(1.5);
+  transition: transform 1s ease-in-out;
+  color: #DC143C;
+}
+
+
+
+
+
+/* --------------------------------------------------------------- */
+
+#message-container{
+  color: rgb(6, 103, 6);
+}
