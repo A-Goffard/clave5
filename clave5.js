@@ -25,9 +25,15 @@ function updateLetterBox(letter) {
     currentLetterIndex++;
 
     if (currentLetterIndex === correctWord.length) {
-        document.getElementById("message-container").innerHTML = `<p>Enhorabuena! Adivinaste la palabra!</p>`;showApplause()
+        document.getElementById("message-container").innerText = `Enhorabuena! Adivinaste la palabra!`;showApplause();
+        
+         // Ocultar el botón "Siguiente" después de un breve tiempo (por ejemplo, 1000ms)
+         setTimeout(function() {
+            ocultarSiguienteButton();
+        }, 100);
+
     } else {
-        document.getElementById("message-container").innerHTML = `<p>Buen trabajo!</p>`;
+        document.getElementById("message-container").innerText = `Buen trabajo!`;
     }
 }
 
@@ -46,7 +52,7 @@ function checkLetter() {
     const userInput = document.getElementById("guess-input").value.toLowerCase();
 
     if (userInput.length !== 1 || !/^[a-z]$/.test(userInput)) {
-        document.getElementById("message-container").innerHTML = `<p >Por favor introduzca una letra única válida.</p>`;
+        document.getElementById("message-container").innerText = `Por favor introduzca una letra única válida.`;
         return;
     }
 
@@ -56,7 +62,7 @@ function checkLetter() {
         updateLetterBox(expectedLetter);
         document.getElementById("guess-input").focus();
     } else {
-        document.getElementById("message-container").innerHTML = `<p>Letra incorrecta. Intenta otra vez.</p>`;
+        document.getElementById("message-container").innerText = `Letra incorrecta. Intenta otra vez.`;
     }
 
     document.getElementById("guess-input").value = "";
@@ -73,4 +79,18 @@ function actualizarYVolverAlInicio() {
     setTimeout(function () {
         window.scrollTo(0, 0);
     }, 500);
+}
+
+
+function ocultarSiguienteButton() {
+    // Obtener el botón por su ID (cambia "siguienteBtn" al ID de tu botón)
+    var siguienteButton = document.getElementById("siguienteBtn");
+
+    // Verificar si el botón existe antes de intentar ocultarlo
+    if (siguienteButton) {
+        // Aplicar la propiedad display: none al estilo del botón
+        siguienteButton.style.display = "none";
+    } else {
+        console.error("El botón no se encontró.");
+    }
 }
