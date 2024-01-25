@@ -1,4 +1,4 @@
-# Yincana Question - Proyecto de Oussama y John
+# Yincana Question - Proyecto de Jhon, Oussama y Abdelrahmane 
 
 Este proyecto, titulado "Yincana Question", es una aplicación web interactiva que desafía a los usuarios a adivinar una palabra relacionada con el alfabeto rúnico vikingo. El juego proporciona una experiencia educativa y entretenida, permitiendo a los jugadores aprender sobre las runas vikingas mientras se divierten.
 
